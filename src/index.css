@@ -1,0 +1,117 @@
+*{
+  margin: 0;
+  padding:0;
+  box-sizing: border-box;
+
+}
+body{
+background: #DDD;
+font-family: sans-serif, Arial, Helvetica, sans-serif;
+}
+.App {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+}
+
+.player {
+  display: block;
+  background-color: #999393;
+  display: block;
+  margin: 0px auto;
+  padding: 50px;
+  border-radius: 16px;
+  box-shadow: inset -6px -6px 12px rgba(0, 0, 0, 0.8), inset 6px 6px 12px rgba(255, 255, 255, 0.4);
+}
+.player > h4 {
+  color: rgb(202, 195, 195);
+  font-size: 16px;
+  text-transform: uppercase;
+  font-weight: 600;
+  text-align: center;
+}
+.player > p {
+  color: rgb(46, 45, 45);
+  font-size: 14px;
+  text-align: center;
+  font-weight: 600;
+}
+
+.player > p span {
+  font-weight: 400;
+}
+
+.player-details .details-img {
+  position: relative;
+  width: fit-content;
+  margin: 0 auto;
+}
+
+.player-details .details-img img {
+  display: block;
+  margin: 50px auto;
+  width: 100%;
+  max-width: 280px;
+  height:180px;
+  border-radius: 50%;
+  box-shadow: 6px 6px 12px rgba(0, 0, 0, 0.8), -6px -6px 12px rgba(255, 255, 255, 0.4);
+}
+
+.player-details .details-img:after {
+  content: '';
+  display: block;
+  position: absolute;
+  top: -25px;
+  left: -25px;
+  right: -25px;
+  bottom: -25px;
+  border-radius: 50%;
+  /* border: 3px solid rgba(255, 206, 0, 1); */
+}
+
+.player-details .details-title {
+  color: #EEE;
+  font-size: 22px;
+  text-shadow: 2px 2px 4px rgba(0,0,0,0.8), -2px -2px 4px rgba(255,255,255,0.4);
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.player-details .details-artist {
+  color: rgb(70, 68, 68);
+  font-size: 20px;
+  text-shadow: 2px 2px 4px rgba(0,0,0,0.8), -2px -2px 4px rgba(255,255,255,0.4);
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.player-controls {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 30px;
+}
+
+.player-controls .play-btn {
+  display: flex;
+  margin: 0 30px;
+  padding: 20px;
+  border-radius: 50%;
+  box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.8), -4px -4px 10px rgba(255, 255, 255, 0.4), inset -4px -4px 10px rgba(0, 0, 0, 0.4), inset 4px 4px 10px rgba(255, 255, 255, 0.4);
+  border: none;
+  outline: none;
+  background-color: #fcfcfd;
+  color: rgb(51, 50, 50);
+  font-size: 24px;
+  cursor: pointer;
+}
+
+.player-controls .skip-btn {
+  background: none;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  color: rgb(31, 29, 29);
+  font-size: 18px;
+}
